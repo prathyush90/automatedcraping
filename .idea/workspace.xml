@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fefd929-c56f-4702-80b7-6c5accbc39f2" name="Default Changelist" comment="" />
+    <list default="true" id="8fefd929-c56f-4702-80b7-6c5accbc39f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trie.py" beforeDir="false" afterPath="$PROJECT_DIR$/EditDistance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soupparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/soupparser.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/soupparser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="66" />
+            <state relative-caret-position="71">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -23,28 +27,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/city_coding.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret column="19279" selection-start-column="19275" selection-end-column="19279" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/iata_status.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="216" selection-start-column="214" selection-end-column="216" />
+              <caret column="114" lean-forward="true" selection-start-column="114" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Trie.py">
+        <entry file="file://$PROJECT_DIR$/EditDistance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+            <state relative-caret-position="154">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -60,9 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>budapest</find>
-      <find>BIRMINGHAM</find>
-      <find>container</find>
       <find>data-</find>
       <find>open_click</find>
       <find>moreinfo</find>
@@ -86,21 +78,27 @@
       <find>alitali</find>
       <find>aer l</find>
       <find>13</find>
-      <find>gibr</find>
-      <find>on</find>
       <find>air</find>
       <find>airline-listing-line-item</find>
+      <find>flight-row</find>
+      <find>on</find>
+      <find>gibr</find>
+      <find>getTextFromElement</find>
+      <find>flight-item-detail</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/status.json" />
         <option value="$PROJECT_DIR$/request-html-parser.py" />
-        <option value="$PROJECT_DIR$/Trie.py" />
         <option value="$PROJECT_DIR$/soupexample.py" />
         <option value="$PROJECT_DIR$/data_airlines.json" />
         <option value="$PROJECT_DIR$/city_coding.json" />
+        <option value="$PROJECT_DIR$/Trie.py" />
         <option value="$PROJECT_DIR$/soupparser.py" />
       </list>
     </option>
@@ -110,6 +108,7 @@
     <option name="width" value="1280" />
     <option name="height" value="660" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -248,14 +247,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/soupexample.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/soupparser.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/soupparser.py</url>
-          <line>146</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/EditDistance.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -306,27 +305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/city_coding.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret column="19279" selection-start-column="19275" selection-end-column="19279" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iata_status.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="216" selection-start-column="214" selection-end-column="216" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Trie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/bs4/element.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -334,10 +312,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/iata_status.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="114" lean-forward="true" selection-start-column="114" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/city_coding.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret column="19279" selection-start-column="19275" selection-end-column="19279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EditDistance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/soupparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="70" column="66" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="66" />
+        <state relative-caret-position="71">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>

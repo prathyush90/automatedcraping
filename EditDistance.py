@@ -36,7 +36,10 @@ class Trie(object):
         results = []
         for word in self.words:
             cost = self.levenshtein(TARGET, word)+1
-            prob = (abs(len(TARGET)-cost))/((abs(len(TARGET)-len(word)) + 1)*cost)
+            #prob = (abs(len(TARGET)-cost))/((abs(len(TARGET)-len(word)) + 1)*cost)
+            if(cost == 0):
+                cost = 0.000001
+            prob = 1/cost
             if prob >= probability:
                 results.append((word, prob))
 

@@ -1,5 +1,5 @@
 from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 import bs4
 import ssl
 import operator
@@ -7,8 +7,9 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 import json
-from Trie import Trie
+from EditDistance import Trie
 from selenium.webdriver.common.keys import Keys
+import re
 
 classnames = {}
 def visit(node):
@@ -39,7 +40,7 @@ def dfs(bs):
 
 
 
-# # This restores the same behavior as before.
+
 context = ssl._create_unverified_context()
 headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'}
 
@@ -68,7 +69,8 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 #https://www.bud.hu/en/arrivals
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
-driver.get('https://www.amman-airport.com/queen-alia-arrivals?tp=6')
+website_url = 'https://www.sharjahairport.ae/en/traveller/flight-information/passenger-arrivals/'
+driver.get(website_url)
 html = driver.find_element_by_tag_name('html')
 
 #creating a scroll like event for websites which load data on scroll
@@ -77,40 +79,59 @@ while(count >0):
     html.send_keys(Keys.DOWN)
     count = count-1
 soup = BeautifulSoup(driver.page_source, 'html.parser')
+comments = soup.findAll(text=lambda text:isinstance(text, Comment))
+[comment.extract() for comment in comments]
 #print(driver.page_source)
 driver.quit()
 htmlcontents = soup.body
 dfs(htmlcontents)
 
-#no logic for selecting 50. Randomly picked top 50
-sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)[:50]
-#print(sorted_x)
+#no logic for selecting 30. Picked top 30
+sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)[:30]
+print(sorted_x)
 i = 0
 finalclname = []
-maxpercentage = -1
+maxpercentage = 0
 
-#sometimes text may be embedded inside a span or a div etc. So going one depth inside if no text found can go two or 3 layers also max 3
+
+
 def getTextFromElement(child):
     text = child.find(text=True, recursive=False)
+    if(text):
+        text = text.strip()
     if(not text):
         children = child.findChildren(recursive=False)
         if(children):
-            child = children[0]
-            text = child.find(text=True, recursive=False)
+            text = getTextFromElement(children[0])
+        # text = getFirstChildText(child).strip()
     return text
+
+def getAllTextFromElement(child, resArray):
+    text = child.find(text=True, recursive=False)
+    if(text):
+        text = text.strip()
+    if(not text):
+        children = child.findChildren(recursive=False)
+        for child in children:
+            text = getTextFromElement(child)
+            if(text):
+                resArray.append(text)
+    else:
+        resArray.append(text)
+
 
 
 
 print("Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!")
 #Loop through most repeated css classes and get the elements
 for index,(clname,num) in enumerate(sorted_x):
-    #print(index)
+    print("Scanning number {} from top repeating elements".format(index))
     i = i+1
     clslist = clname.split(",")
     elements = soup.findAll(lambda tag:tag.get('class') == clslist)
 
-    # if(i == 13):
-    #     print("catch")
+    if(i == 21):
+        print("catch")
     percentage = 0
     #Get text within these elements and store them in alist
     for element in elements:
@@ -118,18 +139,24 @@ for index,(clname,num) in enumerate(sorted_x):
         children = element.findChildren(recursive=False)
         for child in children:
             text = getTextFromElement(child)
-            if(text):
-                texts.append(text)
+            texts.append(text)
         #print(texts)
         elementHasCity = False
         elementHasAirLine = False
         elementHasStatus = False
+
         for text in texts:
+
             if (text and len(text) > 2):
+                try:
+                    text = re.sub('[^0-9a-zA-Z:, ,-]+', '', text)
+                except:
+                    print(text)
                 #the text inside these elements should have atleast one city name, one airline name and one status value
-                res1 = city_trie.search(text.lower(), 0.2)
-                res2 = airline_trie.search(text.lower(), 0.2)
-                res3 = status_trie.search(text.lower(), 0.2)
+                res1 = city_trie.search(text.lower(), 0.4)
+                res2 = airline_trie.search(text.lower(), 0.4)
+
+                res3 = status_trie.search(text.lower(), 0.4)
 
                 if (len(res1) > 0):
                     elementHasCity = True
@@ -140,29 +167,33 @@ for index,(clname,num) in enumerate(sorted_x):
                 if (len(res3) > 0):
                     elementHasStatus = True
                     res6 = res3
-        if (elementHasCity and elementHasAirLine and elementHasStatus):
-            percentage += 1
-    #Percentage of elements having all three values should be and will be  highest for flight card  div or row or whatever and that is our point of interest. Store class name or any other necessary attribute for further use
-    percentage = (percentage/len(elements))*100
+        if (elementHasCity):
+            percentage += 1/3
+        if (elementHasAirLine):
+            percentage += 1/3
+        if (elementHasStatus):
+            percentage += 1/3
+    #Percentage of elements having the  highest flight information will obviously be the flight card.It can be div or table doesn't matter. Store that class name or any other necessary attribute for further use
+
+    if (len(elements) > 0):
+        percentage = (percentage / len(elements)) * 100
     if(percentage > maxpercentage):
         maxpercentage = percentage
         finalclname = clslist
-        # print(maxpercentage)
-        # print(finalclname)
+        print("Number {} element's confidence percentage is {}".format(index, maxpercentage))
+        print("Number {} element's class name is {}".format(index,finalclname))
     #if percentage is 100 then we have found the class name no point in traversing further
     if(maxpercentage == 100):
         break
 print(" The class names of interest for this url is {} ".format(finalclname))
 print("This is a one time procedure . Use above value for continuous scraping unless any change in page source")
 print("<--- Extracted flight detail values are as follows associate them yourself --->")
-elements = soup.findAll(lambda tag:tag.get('class') == clslist)
+elements = soup.findAll(lambda tag:tag.get('class') == finalclname)
 for element in elements:
     texts = []
     children = element.findChildren(recursive=False)
     for child in children:
-        text = getTextFromElement(child)
-        if(text):
-            texts.append(text)
+        getAllTextFromElement(child, texts)
     print(texts)
 
 
