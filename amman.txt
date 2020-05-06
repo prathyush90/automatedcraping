@@ -1,0 +1,51 @@
+Looking for [chromedriver 81.0.4044.69 mac64] driver in cache
+File found in cache by path [/Users/prathyush/.wdm/drivers/chromedriver/81.0.4044.69/mac64/chromedriver]
+[('menu__link', 21), ('menu__list-item--subitem', 13), ('footer__link', 13), ('footer__link-section', 8), ('footer__link-title', 8), ('container', 5), ('menu__list-item--submenu', 4), ('arr-dw', 4), ('toggleDisplay', 4), ('menu__submenu,toggleHidden', 4), ('menu__list-item', 4), ('flight-col,flight-col__dest', 4), ('flight-col__subbox', 4), ('flight-col,flight-col__hour', 4), ('flight-col,flight-col__flight', 4), ('flight-col,flight-col__airline', 4), ('flight-row', 3), ('flights-features__time--link', 3), ('ad', 2), ('adsbygoogle', 2), ('flights-features__search-airlines', 2), ('footer__bottom--contact', 2), ('cc_banner-wrapper', 1), ('cc_banner,cc_container,cc_container--open', 1), ('cc_btn,cc_btn_accept_all', 1), ('cc_message', 1), ('cc_more_info', 1), ('cc_logo', 1), ('header', 1), ('header__box', 1)]
+Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!
+Scanning number 0 from top repeating elements
+Scanning number 1 from top repeating elements
+Number 1 element's confidence percentage is 10.256410256410255
+Number 1 element's class name is ['menu__list-item--subitem']
+Scanning number 2 from top repeating elements
+Scanning number 3 from top repeating elements
+Scanning number 4 from top repeating elements
+Scanning number 5 from top repeating elements
+Scanning number 6 from top repeating elements
+Number 6 element's confidence percentage is 16.666666666666664
+Number 6 element's class name is ['menu__list-item--submenu']
+Scanning number 7 from top repeating elements
+Scanning number 8 from top repeating elements
+Scanning number 9 from top repeating elements
+Scanning number 10 from top repeating elements
+Scanning number 11 from top repeating elements
+Number 11 element's confidence percentage is 25.0
+Number 11 element's class name is ['flight-col', 'flight-col__dest']
+Scanning number 12 from top repeating elements
+Scanning number 13 from top repeating elements
+Scanning number 14 from top repeating elements
+Scanning number 15 from top repeating elements
+Scanning number 16 from top repeating elements
+Number 16 element's confidence percentage is 44.44444444444444
+Number 16 element's class name is ['flight-row']
+Scanning number 17 from top repeating elements
+Scanning number 18 from top repeating elements
+Scanning number 19 from top repeating elements
+Scanning number 20 from top repeating elements
+catch
+Scanning number 21 from top repeating elements
+Scanning number 22 from top repeating elements
+Scanning number 23 from top repeating elements
+Scanning number 24 from top repeating elements
+Scanning number 25 from top repeating elements
+Scanning number 26 from top repeating elements
+Scanning number 27 from top repeating elements
+Scanning number 28 from top repeating elements
+Scanning number 29 from top repeating elements
+ The class names of interest for this url is ['flight-row']
+This is a one time procedure . Use above value for continuous scraping unless any change in page source
+<--- Extracted flight detail values are as follows associate them yourself --->
+['Sharm el Sheikh', '(SSH)', '11:00', 'R51814', 'Jordan Aviation Airlines', 'Scheduled [+]']
+['Dubai', '(DXB)', '11:26', 'RJ1613', 'Royal Jordanian', 'Landed - On-time [+]']
+['Bahrain', '(BAH)', '11:45', 'GF971', 'Gulf Air', 'Canceled [+]']
+
+Process finished with exit code 0

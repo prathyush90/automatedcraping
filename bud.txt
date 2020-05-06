@@ -1,0 +1,62 @@
+[('clear', 55), ('color-orange', 54), ('heading', 52), ('col-lg-3,col-md-4,col-xs-6', 51), ('row', 47), ('mobil-kiemelt-title', 42), ('third-level', 38), ('lg-p-t-5,lg-p-b-20,uppercase', 30), ('container', 23), ('lg-p-t-5,lg-p-b-20,uppercase,tulhosszu', 22), ('info', 21), ('third-level-cont', 19), ('panels,bottom-bordered,xxs-p-t-50,xxs-p-b-20', 19), ('col-lg-12,menuthird_elem_cont', 18), ('open_click', 18), ('moreinfo', 18), ('select-outer', 13), ('select-inner', 13), ('options', 13), ('clock,custom-select', 10), ('icon,icon-info,icon-info-white', 10), ('row_2', 10), ('panels-body', 9), ('data-table,table-body', 9), ('data-table,table-body,row_2', 8), ('icon,icon-info', 8), ('second-level,container,all-col-lg-2', 6), ('panels-footer', 6), ('light', 6), ('box-icon', 6)]
+Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!
+Scanning number 0 from top repeating elements
+Scanning number 1 from top repeating elements
+Scanning number 2 from top repeating elements
+Number 2 element's confidence percentage is 1.282051282051282
+Number 2 element's class name is ['heading']
+Scanning number 3 from top repeating elements
+Number 3 element's confidence percentage is 4.57516339869281
+Number 3 element's class name is ['col-lg-3', 'col-md-4', 'col-xs-6']
+Scanning number 4 from top repeating elements
+Scanning number 5 from top repeating elements
+Scanning number 6 from top repeating elements
+Number 6 element's confidence percentage is 7.894736842105263
+Number 6 element's class name is ['third-level']
+Scanning number 7 from top repeating elements
+Scanning number 8 from top repeating elements
+Scanning number 9 from top repeating elements
+Scanning number 10 from top repeating elements
+Scanning number 11 from top repeating elements
+Scanning number 12 from top repeating elements
+Scanning number 13 from top repeating elements
+Scanning number 14 from top repeating elements
+Number 14 element's confidence percentage is 87.0370370370371
+Number 14 element's class name is ['open_click']
+Scanning number 15 from top repeating elements
+Scanning number 16 from top repeating elements
+Scanning number 17 from top repeating elements
+Scanning number 18 from top repeating elements
+Scanning number 19 from top repeating elements
+Scanning number 20 from top repeating elements
+catch
+Scanning number 21 from top repeating elements
+Scanning number 22 from top repeating elements
+Scanning number 23 from top repeating elements
+Scanning number 24 from top repeating elements
+Scanning number 25 from top repeating elements
+Scanning number 26 from top repeating elements
+Scanning number 27 from top repeating elements
+Scanning number 28 from top repeating elements
+Scanning number 29 from top repeating elements
+ The class names of interest for this url is ['open_click']
+This is a one time procedure . Use above value for continuous scraping unless any change in page source
+<--- Extracted flight detail values are as follows associate them yourself --->
+['08:50', 'Sarajevo', 'Wizz Air', 'W62238', '2B', 'Cancelled']
+['11:10', 'Eindhoven', 'Wizz Air', 'W62272', '2B', 'Scheduled']
+['11:15', 'Amsterdam', 'KLM', 'KL1973', '2B', 'Scheduled']
+['Amsterdam', 'Delta Airlines', 'DL9433', '2B', 'Scheduled']
+['12:55', 'Doha', 'Qatar Airways', 'QR199', '2B', 'Cancelled']
+['17:35', 'Stockholm NYO', 'Wizz Air', 'W62404', '2B', 'Scheduled']
+['21:25', 'London STN', 'Ryanair', 'FR8371', '2B', 'Scheduled']
+['23:55', 'Madrid', 'Wizz Air', 'W62372', '2B', 'Scheduled']
+['00:05', 'London LTN', 'Wizz Air', 'W62210', '2B', 'Scheduled']
+['06:00', 'Sarajevo', 'Wizz Air', 'W62237', '2B', 'Cancelled']
+['06:25', 'Eindhoven', 'Wizz Air', 'W62271', '2B', 'Taxied 06:19']
+['12:00', 'Amsterdam', 'KLM', 'KL1974', '2B', 'Scheduled']
+['Amsterdam', 'Delta Airlines', 'DL9550', '2B', 'Scheduled']
+['12:45', 'Stockholm NYO', 'Wizz Air', 'W62403', '2B', 'Scheduled']
+['16:30', 'Doha', 'Qatar Airways', 'QR200', '2B', 'Cancelled']
+['16:40', 'Madrid', 'Wizz Air', 'W62371', '2B', 'Scheduled']
+['18:15', 'London LTN', 'Wizz Air', 'W62209', '2B', 'Scheduled']
+['21:50', 'London STN', 'Ryanair', 'FR8369', '2B', 'Scheduled']

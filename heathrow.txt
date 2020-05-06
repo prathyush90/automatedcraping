@@ -1,0 +1,60 @@
+Looking for [chromedriver 81.0.4044.69 mac64] driver in cache
+File found in cache by path [/Users/prathyush/.wdm/drivers/chromedriver/81.0.4044.69/mac64/chromedriver]
+[('sprite-symbol-usage', 166), ('nav-inner-link-wrapper,lg-mb1', 50), ('cta,flex-inline,flex-center,secondary,flex,flex-justify,full-width,border-box,nav-inner-link', 50), ('icon-right', 43), ('icon,arrow-right', 39), ('col-scheduled', 19), ('col-flight', 19), ('col-arriving-from', 19), ('col-airline,sm-hide', 19), ('col-terminal', 19), ('col-save', 19), ('airline-listing-line-item,sm-px3,lg-px3,py4,md-py3', 18), ('my0,tags,flex-inline,flex-justify-center', 18), ('col-status,sm-hide', 18), ('my0,status,flex-inline,flex-justify-center,green', 18), ('save-flight-button-wrapper,icon-not-selected', 18), ('icon', 18), ('links,md-pb1,sm-pb1', 18), ('hover-underline', 18), ('cta,flex-inline,flex-center,secondary,flex-justify,full-width,border-box,nav-inner-link', 17), ('nav-inner-link-wrapper,lg-mb3', 16), ('pr2,sm-hide,tail-fin-img', 15), ('button-label,icon-right', 14), ('lg-inline-block,l2-grouping-column,lg-pr3', 14), ('nav-grouping-label,sm-m3,md-m3,lg-m0,lg-mb2,uppercase', 14), ('icon,chevron-left', 13), ('p0,m0,list-style-none,l2-level-links', 13), ('st0', 12), ('white-background,sm-hide,md-hide,lg-inline-block,lg-mr3,nav-promo-wrapper', 12), ('promo-container,variation-d,relative', 11)]
+Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!
+Scanning number 0 from top repeating elements
+Scanning number 1 from top repeating elements
+Scanning number 2 from top repeating elements
+Scanning number 3 from top repeating elements
+Scanning number 4 from top repeating elements
+Scanning number 5 from top repeating elements
+Scanning number 6 from top repeating elements
+Scanning number 7 from top repeating elements
+Scanning number 8 from top repeating elements
+Scanning number 9 from top repeating elements
+Scanning number 10 from top repeating elements
+Scanning number 11 from top repeating elements
+Number 11 element's confidence percentage is 90.74074074074079
+Number 11 element's class name is ['airline-listing-line-item', 'sm-px3', 'lg-px3', 'py4', 'md-py3']
+Scanning number 12 from top repeating elements
+Scanning number 13 from top repeating elements
+Scanning number 14 from top repeating elements
+Scanning number 15 from top repeating elements
+Scanning number 16 from top repeating elements
+Scanning number 17 from top repeating elements
+Scanning number 18 from top repeating elements
+Scanning number 19 from top repeating elements
+Scanning number 20 from top repeating elements
+catch
+Scanning number 21 from top repeating elements
+Scanning number 22 from top repeating elements
+Scanning number 23 from top repeating elements
+Scanning number 24 from top repeating elements
+Scanning number 25 from top repeating elements
+Scanning number 26 from top repeating elements
+Scanning number 27 from top repeating elements
+Scanning number 28 from top repeating elements
+Scanning number 29 from top repeating elements
+ The class names of interest for this url is ['airline-listing-line-item', 'sm-px3', 'lg-px3', 'py4', 'md-py3']
+This is a one time procedure . Use above value for continuous scraping unless any change in page source
+<--- Extracted flight detail values are as follows associate them yourself --->
+['11:15', 'EI938', 'Belfast', 'Aer Lingus', 'T2', 'Landed']
+['11:25', 'AZ202', 'Rome', 'Alitalia', 'T2', 'Landed']
+['11:45', 'AC6963', 'Dusseldorf', 'Air Canada', 'T2', 'On time']
+['11:45', 'EW9466', 'Dusseldorf', 'Eurowings', 'T2', 'On time']
+['11:45', 'LH5354', 'Dusseldorf', 'Lufthansa', 'T2', 'On time']
+['11:45', 'UA9625', 'Dusseldorf', 'United Airlines', 'T2', 'On time']
+['11:50', 'AC6673', 'Abu Dhabi', 'Air Canada', 'T2', 'On time']
+['11:50', 'AV2413', 'Abu Dhabi', 'Avianca', 'T2', 'On time']
+['11:50', 'EY019', 'Abu Dhabi', 'Etihad Airways', 'T2', 'On time']
+['11:50', 'GA9126', 'Abu Dhabi', 'Garuda Indonesia', 'T2', 'On time']
+['11:50', 'HM5010', 'Abu Dhabi', 'HM', 'T2', 'On time']
+['11:50', 'HX1449', 'Abu Dhabi', 'HX', 'T2', 'On time']
+['11:50', 'KM2132', 'Abu Dhabi', 'Air Malta', 'T2', 'On time']
+['11:50', 'NZ4299', 'Abu Dhabi', 'Air New Zealand', 'T2', 'On time']
+['11:50', 'TP6903', 'Abu Dhabi', 'TAP Portugal', 'T2', 'On time']
+['11:50', 'VA7019', 'Abu Dhabi', 'VA', 'T2', 'On time']
+['11:50', 'XY3019', 'Abu Dhabi', 'XY', 'T2', 'On time']
+['12:00', 'AA6443', 'Amsterdam', 'American Airlines', 'T5', 'On time']
+
+Process finished with exit code 0

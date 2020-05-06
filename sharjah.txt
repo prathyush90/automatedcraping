@@ -1,0 +1,50 @@
+
+Looking for [chromedriver 81.0.4044.69 mac64] driver in cache
+File found in cache by path [/Users/prathyush/.wdm/drivers/chromedriver/81.0.4044.69/mac64/chromedriver]
+[('fi-arrow-fill-right', 31), ('ui-slider-line', 25), ('ui-slider-label', 25), ('clear', 23), ('landing-link,fi-arrow-fill-right', 23), ('mandatory_mark', 8), ('year', 8), ('drobdown-column,has-sub-links', 6), ('fi-arrow-thin-down,hide-on-desktop,sub-drop', 6), ('third-level-link', 6), ('simplebar-scrollbar', 6), ('input_class', 5), ('hide-on-mobile', 5), ('parent-link,has-sub', 5), ('fi-arrow-thin-down,hide-on-desktop,main-drop', 5), ('flight-item-detail,cf', 5), ('flight-name,detail-item', 5), ('flight-logo', 5), ('flight-detail', 5), ('fl-name', 5), ('fl-number', 5), ('flight-destination,detail-item', 5), ('orgin,fi-plane', 5), ('eta,fi-location', 5), ('flight-status,detail-item', 5), ('flight_belt', 5), ('tracking,fi-track,open_popup', 5), ('tw-tweet,fi-twitter,bt_twitter,bt_twitter_img', 5), ('f-messager,fi-messenger,bt_facebook_img', 5), ('footer-menu-level-2', 5)]
+Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!
+Scanning number 0 from top repeating elements
+Scanning number 1 from top repeating elements
+Scanning number 2 from top repeating elements
+Scanning number 3 from top repeating elements
+Scanning number 4 from top repeating elements
+Scanning number 5 from top repeating elements
+Scanning number 6 from top repeating elements
+Scanning number 7 from top repeating elements
+Number 7 element's confidence percentage is 5.555555555555555
+Number 7 element's class name is ['drobdown-column', 'has-sub-links']
+Scanning number 8 from top repeating elements
+Scanning number 9 from top repeating elements
+Scanning number 10 from top repeating elements
+Scanning number 11 from top repeating elements
+Scanning number 12 from top repeating elements
+Scanning number 13 from top repeating elements
+Scanning number 14 from top repeating elements
+Scanning number 15 from top repeating elements
+Number 15 element's confidence percentage is 33.33333333333333
+Number 15 element's class name is ['flight-item-detail', 'cf']
+Scanning number 16 from top repeating elements
+Scanning number 17 from top repeating elements
+Scanning number 18 from top repeating elements
+Scanning number 19 from top repeating elements
+Scanning number 20 from top repeating elements
+catch
+Scanning number 21 from top repeating elements
+Scanning number 22 from top repeating elements
+Scanning number 23 from top repeating elements
+Scanning number 24 from top repeating elements
+Scanning number 25 from top repeating elements
+Scanning number 26 from top repeating elements
+Scanning number 27 from top repeating elements
+Scanning number 28 from top repeating elements
+Scanning number 29 from top repeating elements
+ The class names of interest for this url is ['flight-item-detail', 'cf']
+This is a one time procedure . Use above value for continuous scraping unless any change in page source
+<--- Extracted flight detail values are as follows associate them yourself --->
+['Skyup Airlines', 'Goa', '06:35', 'Arrived\xa012:14', 'track', 'twitter', 'facebook msg']
+['Air Arabia', 'Kabul', '19:00', 'Arrived\xa018:58', 'track', 'twitter', 'facebook msg']
+['Skyup Airlines', 'Kyiv - Borispol', '21:40', 'Arrived\xa003:01', 'track', 'twitter', 'facebook msg']
+['Air Arabia', 'Lar', '15:35', 'Scheduled\xa015:35', 'track', 'twitter', 'facebook msg']
+['Skyup Airlines', 'Kyiv - Borispol', '21:15', 'Scheduled\xa021:15', 'track', 'twitter', 'facebook msg']
+
+Process finished with exit code 0
