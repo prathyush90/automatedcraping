@@ -4,13 +4,13 @@ import bs4
 import ssl
 import operator
 from selenium import webdriver
-from webdriver_manager.firefox import GeckoDriverManager
+from webdrivermanager import GeckoDriverManager
 import os
 import json
 from EditDistance import Trie
 from selenium.webdriver.common.keys import Keys
 import re
-
+gdd = GeckoDriverManager()
 classnames = {}
 def visit(node):
     if isinstance(node, bs4.element.Tag):
@@ -65,7 +65,7 @@ status_trie = Trie(status_names)
 
 # req = Request('https://www.bud.hu/en/arrivals', headers=headers)
 
-driver =webdriver.Firefox(executable_path=GeckoDriverManager().install())
+driver =webdriver.Firefox(executable_path=gdd.download_and_install()[0])
 #https://www.bud.hu/en/arrivals
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
