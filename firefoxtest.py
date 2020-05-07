@@ -10,8 +10,11 @@ import json
 from EditDistance import Trie
 from selenium.webdriver.common.keys import Keys
 import re
+from selenium.webdriver.firefox.options import Options
 gdd = GeckoDriverManager()
 classnames = {}
+options = Options()
+options.headless = True
 def visit(node):
     if isinstance(node, bs4.element.Tag):
         if(node.get('class')):
@@ -65,7 +68,7 @@ status_trie = Trie(status_names)
 
 # req = Request('https://www.bud.hu/en/arrivals', headers=headers)
 
-driver =webdriver.Firefox(executable_path=gdd.download_and_install()[0])
+driver =webdriver.Firefox(executable_path=gdd.download_and_install()[0],options=options)
 #https://www.bud.hu/en/arrivals
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
