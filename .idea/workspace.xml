@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fefd929-c56f-4702-80b7-6c5accbc39f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/amman.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bud.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heathrow.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sharjah.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soupparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/soupparser.py" afterDir="false" />
-    </list>
+    <list default="true" id="8fefd929-c56f-4702-80b7-6c5accbc39f2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soupparser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+            <state relative-caret-position="1005">
+              <caret line="67" column="58" lean-forward="true" selection-end-line="203" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -29,11 +22,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amman.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
               <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firefoxtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="73" lean-forward="true" selection-start-line="67" selection-end-line="67" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,6 +121,7 @@
         <option value="$PROJECT_DIR$/sharjah.txt" />
         <option value="$PROJECT_DIR$/soupparser.py" />
         <option value="$PROJECT_DIR$/amman.txt" />
+        <option value="$PROJECT_DIR$/firefoxtest.py" />
       </list>
     </option>
   </component>
@@ -164,7 +170,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.soupparser">
+  <component name="RunManager" selected="Python.firefoxtest">
+    <configuration name="firefoxtest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="scrapetest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/firefoxtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="soupexample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="scrapetest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,6 +236,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.firefoxtest" />
         <item itemvalue="Python.soupparser" />
         <item itemvalue="Python.soupexample" />
       </list>
@@ -240,12 +268,12 @@
     <frame x="0" y="23" width="1280" height="660" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39788732" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39788732" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3996479" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,20 +398,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/amman.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/soupparser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-367">
-          <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+        <state relative-caret-position="1005">
+          <caret line="67" column="58" lean-forward="true" selection-end-line="203" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/amman.txt">
+    <entry file="file://$PROJECT_DIR$/firefoxtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        <state relative-caret-position="1005">
+          <caret line="67" column="73" lean-forward="true" selection-start-line="67" selection-end-line="67" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
