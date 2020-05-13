@@ -73,7 +73,7 @@ driver =webdriver.Firefox(executable_path=gdd.download_and_install()[0],options=
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
 #https://www.sharjahairport.ae/en/traveller/flight-information/passenger-arrivals/
-website_url = 'https://www.amman-airport.com/queen-alia-arrivals?tp=6'
+website_url = 'https://www.bud.hu/en/arrivals'
 driver.get(website_url)
 html = driver.find_element_by_tag_name('html')
 
@@ -91,7 +91,7 @@ htmlcontents = soup.body
 dfs(htmlcontents)
 
 #no logic for selecting 30. Picked top 30
-sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)[:30]
+sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)
 print(sorted_x)
 i = 0
 finalclname = []

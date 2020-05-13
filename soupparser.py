@@ -88,7 +88,7 @@ htmlcontents = soup.body
 dfs(htmlcontents)
 
 #no logic for selecting 30. Picked top 30
-sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)[:30]
+sorted_x = sorted(classnames.items(), key=operator.itemgetter(1), reverse=True)
 print(sorted_x)
 i = 0
 finalclname = []
