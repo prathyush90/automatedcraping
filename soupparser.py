@@ -70,7 +70,8 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
 #https://www.sharjahairport.ae/en/traveller/flight-information/passenger-arrivals/
-website_url = 'https://qaiairport.com/en/flight-information/Pages/Arrivals.aspx'
+#'https://qaiairport.com/en/flight-information/Pages/Arrivals.aspx'
+website_url = 'https://www.bud.hu/en/arrivals'
 driver.get(website_url)
 html = driver.find_element_by_tag_name('html')
 
