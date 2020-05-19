@@ -70,7 +70,7 @@ driver = webdriver.Chrome(ChromeDriverManager().install())
 #https://www.heathrow.com/arrivals
 #https://www.amman-airport.com/queen-alia-arrivals?tp=6
 #https://www.sharjahairport.ae/en/traveller/flight-information/passenger-arrivals/
-website_url = 'https://www.amman-airport.com/queen-alia-arrivals?tp=6'
+website_url = 'https://qaiairport.com/en/flight-information/Pages/Arrivals.aspx'
 driver.get(website_url)
 html = driver.find_element_by_tag_name('html')
 
@@ -122,7 +122,7 @@ def getAllTextFromElement(child, resArray):
 
 
 
-
+classes_shortlisted = []
 print("Started scanning the html tags from source code to find points of interest. This might take a while. Sit back!!")
 #Loop through most repeated css classes and get the elements
 for index,(clname,num) in enumerate(sorted_x):
@@ -184,18 +184,24 @@ for index,(clname,num) in enumerate(sorted_x):
         print("Number {} element's confidence percentage is {}".format(index, maxpercentage))
         print("Number {} element's class name is {}".format(index,finalclname))
     #if percentage is 100 then we have found the class name no point in traversing further
-    if(maxpercentage == 100):
-        break
-print(" The class names of interest for this url is {} ".format(finalclname))
-print("This is a one time procedure . Use above value for continuous scraping unless any change in page source")
-print("<--- Extracted flight detail values are as follows associate them yourself --->")
-elements = soup.findAll(lambda tag:tag.get('class') == finalclname)
-for element in elements:
-    texts = []
-    children = element.findChildren(recursive=False)
-    for child in children:
-        getAllTextFromElement(child, texts)
-    print(texts)
+    if(percentage >= 50):
+        classes_shortlisted.append(clslist)
+
+
+if(not classes_shortlisted):
+    classes_shortlisted.append(finalclname)
+
+for finalclname in classes_shortlisted:
+    print(" The class names of interest for this url is {} ".format(finalclname))
+    print("This is a one time procedure . Use above value for continuous scraping unless any change in page source")
+    print("<--- Extracted flight detail values are as follows associate them yourself --->")
+    elements = soup.findAll(lambda tag:tag.get('class') == finalclname)
+    for element in elements:
+        texts = []
+        children = element.findChildren(recursive=False)
+        for child in children:
+            getAllTextFromElement(child, texts)
+        print(texts)
 
 
 
